@@ -1,0 +1,80 @@
+h1 {
+   text-align: center;
+   font-size: 75px;
+   font-family: Helvetica;
+   color: white;
+   border: 20px;
+   border-style:groove;
+   border-color:lightslategray;
+   background-image: url('images/title-background.png');
+   background-size: auto;
+   width: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: Helvetica;
+    color: black;
+    border: 10px;
+    border-style:ridge;
+    border-color:indigo;
+    border-radius: 20px;
+    background-Image:url('images/section-background.png');
+    background-size: auto;
+}
+
+h3 {
+    font-size:20;
+    font-family: Helvetica;
+    font-weight: bold;
+    color:darkslategray;
+}
+
+.info-snippet{
+    text-align:left;
+    overflow:hidden;
+}
+
+.info-snippet p{
+    margin-left: 10px;
+}
+
+.large-snippet{
+    text-align:left;
+    overflow:hidden;
+    margin: 25px;
+    padding: 5px;
+    border: 5px;
+    border-style:dashed;
+    border-color:indigo;
+    width:fit-content;
+}
+
+.large-snippet code{
+    background-color:lightskyblue;
+    padding: 10px;
+    border-left:ridge gray;
+}
+
+nav {
+    text-align:center;
+}
+
+.structure {
+    float:right;
+}
+
+.code {
+    float: left;
+    background-color: cornflowerblue
+}
+
+.html-semmantics{
+    clear:right;
+}
+
+.side-note{
+    text-align:center;
+    color: darkgray;
+}

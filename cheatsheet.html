@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+    <header>
+        <title>Website Building cheatsheet</title>
+        <link rel='stylesheet' href='style.css'/>
+        <h1>Website Building Cheatsheet</h1>
+    </header>
+    
+    <nav>
+        <a href='#html-structure'>HTML Structure</a> |
+        <a href='#html-semmantics'>HTML Semmantics</a> |
+        <a href='#html-elements'>HTML Elements</a> |
+        <a href='#html-attributes'>HTML Attribute Tags</a> |
+        <a href='#html-best-practice'>HTML Best Practices</a> |
+        <a href='#css-text-tools'>CSS Text Tools</a> |
+        <a href='#css-element-tools'>CSS Element Tools</a> |
+        <a href='#css-best-practice'>CSS Best Practices</a> 
+    </nav>
+
+    <body>
+
+        <section id='html-structure' class='html-structure'>
+            <h2>HTML Structure reccomendations</h2>
+            <article>
+                <figure class='structure'>
+                    <img src='images/html-structure-image.png'/>
+                    <figcaption>The structure in semmantic html</figcaption>
+                </figure>
+                <article class='info-snippet'>
+                    <h3>Header</h3>
+                    <p>The header contains the title, a link to our css style sheet, and an H1 element with the title of the page with some css styling and images to state the branding.</p>
+                    <h3>Nav</h3>
+                    <p>The Nav is the navigation of the website, here you will put links to other pages or redirect to lower parts if this page.</p>
+                    <h3>Section</h3>
+                    <p>contained in the body element, you use section to group content that is related to eachother.</p>
+                    <h3>Article</h3>
+                    <p>This element is used to specify an independent, self contained content. It needs to make sense on its own.</p>
+                    <h3>Headers</h3>
+                    <p>All headers need to be an introduction to the content below it. Do not put an h1 header below an h2 header. this causes a lot of issues with SEO and other features required to aid in the disableds use of a website.</p>
+                    <h3>Aside</h3>
+                    <p>The aside element is used when you have content that is related to a section but is more supplimental then required. Like this image of our structure next to the content you are currently reading.</p>
+                    <h3>Footer</h3>
+                    <p>Like this header, this element contains information about the website that is related to its contents. like copyright and links to related content. Footers can be used within sections to help with further organizing your structure.</p>
+                </article>
+            </article>
+
+        </section>
+
+        <section id='html-semmantics' class='html-semmantics'>
+            <h2>HTML Semmantic Elements</h2>
+            <p class='side-note'>These are the elements that are not included inside the diagram above.</p>
+            <article class='info-snippet'>
+                <h3>Details</h3>
+                <p>defines additional details that the user can view or hide.</p>
+                <h3>Summary</h3>
+                <p>Defines a visible heading for the "details" element.</p>
+                <h3>Figure & Figcaption</h3>
+                <p>Figure is a good element to use for content that is self contained. example: illustrations,diagrams, photos, code listings, etc.</p>
+                <p>Figcaption is a text element below the content that explains what is being displayed.</p>
+                <h3>Main</h3>
+                <p>specifies the main content of a document, this replaces the body element.</p>
+                <h3>Mark</h3>
+                <p>this defines marked/highlited text</p>
+                <h3>Time</h3>
+                <p>defines a date and time.</p>
+            </article>
+        </section>
+
+        <section id='html-elements' class='html-elements'>
+            <h2>HTML Generic Elements</h2>
+            <p class='side-note'></p>
+            <article class='info-snippet'>
+                <h3>H1 - H6</h3>
+                <p>These elements are headings for content. The order is very important. Do not use h1 after h2.</p>
+                <h3>P</h3>
+                <p>This element is the paragraph element. Used to show text in a direct manner.</p>
+                <h3>Br</h3>
+                <p>This element is a self closing element that just adds a break in the page. extra space.</p>
+                <h3>html</h3>
+                <p>This element is typically at the very type and defines the root of the document which is html</p>
+                <h3>body</h3>
+                <p>This is the where the content of the page goes, can be replaced by main for semmantic use.</p>
+                <h3>img</h3>
+                <p>This tag is used to get and render an image. uses src='picture location' to find the image. It is best practice to also use alt='alternatetext' and styler='width: 50px;height:50px'</p>
+                <h3>a</h3>
+                <p>This is the anchor element, used primarely to add links, but can be used to anchor in special classes inside of other elements.</p>
+                <h3>video</h3>
+                <p>This element tag is used to embed video content. best to use .mp4 format. this is not a selfe enclosed tag, must put a message between the opening and closing tag incase the video has failed to load. uses src='video location'</p>
+                <h3>Table</h3>
+                <p>This is the starting definition of a table</p>
+                <article class='large-snippet'>
+                    <h4>Tr</h4>
+                    <p>each table row is defined with Tr</p>
+                    <h4>Th</h4>
+                    <p>This defines the table header</p>
+                    <h4>td</h4>
+                    <p>short for table data, this is where the information for each row goes within each Table heading.</p>
+                </article>
+                <h3>Lists</h3>
+                <p>This elements allows you to group a set of related items</p>
+                <article class='large-snippet'>
+                    <h4>Ul</h4>
+                    <p>Ul is an unordered list, showing only dots</p>
+                    <h4>Ol</h4>
+                    <p>Ol is an ordered list, showing a numbered list</p>
+                    <p>All items in a list must have an Li tag to be in the list.</p>
+                </article>
+            </article>
+        </section>
+
+        <section id='html-attributes' class='html-attributes'>
+            <h2>HTML Attribute tags</h2>
+            <p class='side-note'>These are all the common attribute tags an element tag might use.</p>
+            <atricle class='info-snippet'>
+                <h3>href</h3>
+                <p>This is usually used by the link,a,and nav elements to find the source or link to which it is reffering or redirecting to.</p>
+                <h3>src</h3>
+                <p>This is used by the img, and video tags to find the path where the desired content is located.</p>
+                <h3>width & height</h3>
+                <p>typically used by the img and video tags to know what size to display the content in. It is best practice to always use this.</p>
+                <h3>alt</h3>
+                <p>Typically used by the img tag, used to give an alternate text for the image. Good for SEO and some features used by those with disabilities.</p>
+                <h3>style</h3>
+                <p>used to add css styles to elements directly in line. do not use, but be aware of its usage.</p>
+                <h3>lang</h3>
+                <p>declares the language of the webpage. used at the top of the file.</p>
+                <h3>title</h3>
+                <p>this defines some extra information about an element.</p>
+                <h3>class</h3>
+                <p>used to group elements into a class so that the css files can style them on a larger scale for reusability.</p>
+                <h3>id</h3>
+                <p>Set this attribute to be used by other code within the file or in the styling sheet we have connected to this html file.</p>
+            </atricle>
+        </section>
+
+        <section id='html-best-practice' class='html-best-practice'>
+            <h2>HTML Best Practices</h2>
+            <p>These are the best practices to follow when starting a new project.</p>
+            <article class='info-snippet'>
+                <h3>Use proper document structure</h3>
+                <p>Always start with (!DOCTYPE html) at the top of the file to ensure that it renderes properly.</p>
+                <h3>Always close tags</h3>
+                <p>to avoid encountering validation errors always remember to have a closer tag for every tag you create.</p>
+                <h3>Don't use inline styles</h3>
+                <p>Keeping your style seperate makes it easier to update and change your content. as well as increase the readability.</p>
+                <h3>Use alt attribute with images</h3>
+                <p>it is not required, but it is very important to have a meaningful alt attribute for validation and accessibility reason. it provides context to screen readers, so it should be descriptive as to what the image contains.</p>
+                <h3>Validate frequently</h3>
+                <p>ensure that your file is valid consistently, to avoid missing errors early on. especially if the document is lengthy.</p>
+                <h3>Place styling sheets within the head tag</h3>
+                <p>This will allow the page to load faster.</p>
+                <h3>Use meaningful tags</h3>
+                <p>This improves readability and allows you to update and fix things a lot easier down the road.</p>
+                <h3>Use lowercase markup</h3>
+                <p>It is easier to read and maintain.</p>
+                <h3>reduce the number of elements on a page</h3>
+                <p>redability becomes tedious if you don't find a way to optomize the amount of tags being used.</p>
+            </article>
+        </section>
+
+        <section id='css-text-tools' class='css-text-tools'>
+            <h2>CSS Text Tools</h2>
+            <article class='info-snippet'>
+
+                <h3>Text Attributes</h3>
+                <article  class='large-snippet'>
+                    <h4>color</h4>
+                    <code>color:colorname;</code>
+                    <p>This is the color of the text itself.</p>
+                    <h4>background color</h4>
+                    <code>background-color:colorname;</code>
+                    <p>This is the background behind the text</p>
+                    <h4>Alignment</h4>
+                    <code>text-align:left;</code>
+                    <p>this sets the horizontle alignment of the text, justify makes sure the left and right are parallel.</p>
+                    <h4>transform</h4>
+                    <code>text-transform: uppercase;</code>
+                    <p>This allows you to change the case of the letters. includes capitalize.</p>
+                    <h4>indent</h4>
+                    <code>text-indent:50px;</code>
+                    <p>allows you to indent the first line of the text.</p>
+                    <h4>letter spacing</h4>
+                    <code>letter-spacing: 3px;</code>
+                    <p>This specifies how much space you want between each letter.</p>
+                    <h4>Line Height</h4>
+                    <code>line-height:0.8;</code>
+                    <p>used to specify the space between lines.</p>
+                    <h4>word spacing</h4>
+                    <code>word-spacing:10px;</code>
+                    <p>used to specify how much space you want between each word.</p>
+                    <h4>white space</h4>
+                    <code>white-space: nowrap;</code>
+                    <p>specifies how white space inside an element is handled.</p>
+                    <h4>text shadow</h4>
+                    <code>text-shadow: 2px 2px 5px color</code>
+                    <p>This element will put a shadow on the text.</p>
+                    <p>The first number is the x offset, the second the y offset, the third is a blurr effect, and the last is the color name being set.</p>
+                </article>
+
+                <h3>Font Attributes</h3>
+                <article  class='large-snippet'>
+                    <h4>Font family</h4>
+                    <code>font-family: Helvetica;</code>
+                    <code>font-family: "Times New Roman";</code>
+                    <p>Changes the font of the text. it is always good to add fallback fonts. example is below.</p>
+                    <code>font-family: Helvetica, Tahoma, Verdana;</code>
+                    <p>The fonts will be used in the order given until one works or all fail.</p>
+                    <h4>List of web Safe Fonts</h4>
+                    <ul>
+                        <li>Arial (sans-serif)</li>
+                        <li>Verdana (sans-serif)</li>
+                        <li>Helvetica (sans-serif)</li>
+                        <li>Tahoma (sans-serif)</li>
+                        <li>Trebuchet MS (sans-serif)</li>
+                        <li>Times New Roman (serif)</li>
+                        <li>Georgia (serif)</li>
+                        <li>Garamond (serif)</li>
+                        <li>Courier New (monospace)</li>
+                        <li>Brush Script MT (cursive)</li>
+                    </ul>
+                    <h4>Font style</h4>
+                    <code>font-style:normal;</code>
+                    <p>Used to change text into italic or leaning text.</p>
+                    <h4>Font weight</h4>
+                    <code>font-weight:bold;</code>
+                    <p>changes the text to be bold or normal.</p>
+                    <h4>Font Size</h4>
+                    <code>font-size:40px;</code>
+                    <p>sets the size of the text in pixels.</p>
+                    <h4>percentages can be used.</h4>
+                </article>
+            </article>
+        </section>
+
+        <section id='css-element-tools' class='css-element-tools'>
+            <h2>CSS Element Tools</h2>
+            <article class='info-snippet'>
+                <h3>Background</h3>
+                <article  class='large-snippet'>
+                    <code>background-color:colorname;</code>
+                    <code>background-image:url('url here');</code>
+                    <code>background-repeat:repeat/norepeat;</code>
+                    <code>background-position:left/right/center;</code>
+                    <code>background:15px;</code>
+                </article>
+                <h3>Border</h3>
+                <article  class='large-snippet'>
+                    <code>border:size;</code>
+                    <code>border-style: style;</code>
+                    <p>all possible styles</p>
+                    <ul>
+                        <li>dotted</li>
+                        <li>dashed</li>
+                        <li>solid</li>
+                        <li>double</li>
+                        <li>groove</li>
+                        <li>ridge</li>
+                        <li>inset</li>
+                        <li>outset</li>
+                        <li>none</li>
+                        <li>hidden</li>
+                    </ul>
+                </article>
+                <h3>Margin</h3>
+                <article  class='large-snippet'>
+                    <code>margin:auto; | margin-left:25px; | margin-top:25px; | margin-right:25px; |margin-bottom:25px;</code>
+                </article>
+                <h3>Padding</h3>
+                <article  class='large-snippet'>
+                    <code>padding:auto; | padding: 5px; (this padds all sides by 5px) | padding-left:25px; | padding-top:25px; | padding-right:25px; | padding-bottom:25px;</code>
+                </article>
+                <h3>Box model</h3>
+                <p>This is how the different spacing attributes above work.</p>
+                <img src='images/box-model.png' alt='Box Model'/>
+                <h3>Outline</h3>
+                <p>Outline is a solid line outside the boarder, to make an element stand out.</p>
+                <article  class='large-snippet'>
+                    <code>outline: size(px); | outline-style: (see border styles); | outline-color: color; | outline-width: size(px); | outline-offset: size(px); </code>
+                </article>
+                <h3>Lists</h3>
+                <p>Styles of the numbers and list item markers can be changed here.</p>
+                <article  class='large-snippet'>
+                    <code>list-style-type: (circle,square,upper-roman,lower-alpha)</code>
+                    <code>list-style-image: url('location');</code>
+                </article>
+                <h3>Tables</h3>
+                <article  class='large-snippet'>
+                    <code>border-collapse: collapse;</code>
+                </article>
+                <h3>Opacity</h3>
+                <code>opacity: 0.5</code>
+                <p>opacity is used to show the amount of visibility of an element marked in percentages. 1.0 is 100% and 0.01 is 1%</p>
+                <h3>Width</h3>
+                <code>width:fit-content;</code>
+            </article>
+        </section>
+
+        <section id='css-best-practice' class='css-best-practice'>
+            <h2>CSS Best Practices</h2>
+            <h3>ITCSS: inverted Triangle CSS</h3>
+            <p class='side-note'>Below is a diagram of how this works. This is a great way to structure your CSS Files for ease of readability.</p>
+            <img src='images/itcss-diagram.png' alt='itcss diagram'/>
+            <h3>OOCSS: Object-oriented CSS</h3>
+            <p class='side-note'>The idea behind this style is to separate the structural code from the styling code. If you can mix these two styles, the structure will be far more readable.</p>
+            <code><pre>
+                /* Instead of  */
+                .box {
+                    width: 250px;
+                    height: 250px;
+                    padding: 10px;
+                    border: 1px solid #CCC;
+                    box-shadow: 1px 2px 5px #CCC;
+                    border-radius: 5px;
+                }
+                
+                /* Do */
+                .box {
+                    width: 250px;
+                    height: 250px;
+                    padding: 10px;
+                }
+                
+                .elevated {
+                    border: 1px solid #CCC;
+                    box-shadow: 1px 2px 5px #CCC;
+                    border-radius: 5px;
+                }</pre></code>
+                <h3>Nest your selectors</h3>
+                <p>Nesting your selectors allows for easier readability.</p>
+                <code><pre>
+                .wrapper {
+                    .sidebar {
+                        &.collapsed {
+                            display: none;
+                        }
+                        
+                        .list {
+                            .list-item {
+                                ...
+                                
+                                &.list-item--active {
+                                    ...
+                                }
+                            }
+                        }
+                    }
+                }</pre></code>
+                <h3>Oranize the stylesheet with a top-down structure</h3>
+                <p>It always helps to lay your stylesheet out in a way that allows you to quickly find parts of your code. reccomendation: label the structure in the same way your html is structured.</p>
+                <h3>create your html first</h3>
+                <p>if you create all the classes and know the structure before starting your css styling it can save you time and effort. It also promotes you to create a css structure from a top down perspective improving readability.</p>
+        </section>
+    </body>
+
+    <footer>
+        <h2>Great sources for a quick brushup</h2>
+        <a href="https://www.w3schools.com/html/">HTML documentation</a>
+        <a href="https://www.w3schools.com/css">CSS documentation</a>
+    </footer>
